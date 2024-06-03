@@ -12,22 +12,23 @@ function App() {
   return (
     <>
       <header>
-        <nav>
+        {/* <nav>
           <Link to={'/'}>
             Главная
           </Link>
           <Link to={'/about'}>
             Вторая страница
           </Link>
-        </nav>
+        </nav> */}
       </header>
       <main>
-      <Suspense fallback={<Loader />}>
+      <MainPageAsync />
+      {/*<Suspense fallback={<Loader />}>
         <Routes>
             <Route path={'/'} element={<MainPageAsync />} />
             <Route path={'/about'} element={<AboutPageAsync />} />
           </Routes>
-      </Suspense>
+      </Suspense> */}
       </main>
       <footer></footer>
     </>
