@@ -1,4 +1,4 @@
-
+import './mainPage.scss'
 
 function MainPage() {
     return (
