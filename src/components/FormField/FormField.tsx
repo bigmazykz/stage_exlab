@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import "./FormField.css";
+import style from "./FormField.module.css";
 
 interface IFormFieldProps {
   label: string;
@@ -13,11 +13,11 @@ export const FormField: FC<IFormFieldProps> = ({
   errorMessage,
 }) => {
   return (
-    <label className="form-field">
-      <span className="form-field__label">{label}</span>
+    <label className={style.field}>
+      <span className={style.field__label}>{label}</span>
       {children}
       {errorMessage && (
-        <span className="form-field__error-text">{errorMessage}</span>
+        <span className={style.field__error}>{errorMessage}</span>
       )}
     </label>
   );
