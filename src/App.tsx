@@ -2,7 +2,7 @@ import { Link, Route } from 'react-router-dom'
 import './App.scss'
 import { Routes } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
-import { Loader } from './components/Loader'
+import { LoaderPage } from './components/Loader/LoaderPage'
 
 const MainPageAsync = lazy(()=> import('./components/MainPage/MainPage'))
 const AboutPageAsync = lazy(()=> import('./components/AboutPage/AboutPage'))
